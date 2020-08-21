@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.con {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.con .overlay {
+    background-color: #00000060;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    position: absolute;
+}
+
+.header {
+    position: relative;
+    z-index: 2;
+    color: white;
+    display: flex;
+    padding: 15px;
+    height: 80px;
+}
+
+.logo {
+    font-size: 30px;
+    width: 400px;
+    height: 200px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    font-size: 16px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu li:hover {
+    background-color: yellowgreen;
+    border-radius: 10%;
+    line-height: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.first {
+    position: relative;
+    display: flex;
+    padding-right: 20px;
+    padding-left: 20px;
+    z-index: 2;
+}
+
+.second {
+    position: relative;
+    display: flex;
+    padding-right: 20px;
+    padding-left: 20px;
+    z-index: 2;
+}
+
+.third {
+    position: relative;
+    display: flex;
+    padding-right: 20px;
+    padding-left: 20px;
+    z-index: 2;
+}
+
+.slider .text {
+    color: white;
+    width: 400px;
+    margin-right: 110px;
+    padding-left: 90px;
+    z-index: 2;
+}
+
+.slider .image {
+    z-index: 2;
+}
+
+.slider .image img {
+    width: 400px;
+    float: right;
+    height: 300px;
+    border-radius: 45%;
+    border: solid 7px white;
+    z-index: 2;
+}
+
+.slider .text .but {
+    color: yellowgreen;
+    background-color: white;
+    border-radius: 15px;
+    width: 120px;
+    height: 50px;
+    font-weight: bold;
+    border: solid 3px yellowgreen;
+}
+
+.slider .text .but:hover {
+    color: white;
+    background-color: yellowgreen;
+    border: solid 3px white;
+    transform: rotatez(4deg);
+}
+
+#arrow-right {
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 15%;
+    border: solid;
+    margin-top: -50px;
+    border-width: 15px 0px 15px 25px;
+    right: 0;
+    margin-right: 20px;
+    border-color: transparent transparent transparent green;
+    z-index: 2;
+}
+
+#arrow-left {
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 15%;
+    border: solid;
+    margin-top: -50px;
+    border-width: 15px 25px 15px 0px;
+    left: 0;
+    margin-left: 10px;
+    border-color: transparent green transparent transparent;
+    z-index: 3;
+}
+
+.serv {
+    display: flex;
+    margin-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.fir,
+.sec,
+.thi,
+.for {
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    padding-bottom: 50px;
+    box-shadow: 3px 3px 10px #ccc;
+    border: 1px solid white;
+    color: black;
+}
+
+.fir:hover,
+.sec:hover,
+.thi:hover,
+.for:hover {
+    background-color: #9acd3273;
+    color: white;
+}
+
+.fa:hover {
+    color: white;
+}
+
+.fa {
+    margin-left: 70px;
+    color: black;
+}
+
+.re {
+    text-align: center;
+}
+
+.he {
+    text-align: center;
+}
+
+.work {
+    display: flex;
+    margin-top: -32px;
+}
+
+.hh {
+    z-index: 1;
+    margin-top: 40px;
+}
+
+.wo {
+    color: white;
+    background-color: black;
+    margin: auto;
+    padding: 5px;
+    z-index: 2;
+}
+
+.port {
+    padding-left: 100px;
+    margin-top: 25px;
+}
+
+.po {
+    display: flex;
+}
+
+.rt {
+    display: flex;
+}
+
+.contr {
+    position: relative;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 280px;
+    margin: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 10px #ccc;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    display: block;
+}
+
+.on {
+    width: 100%;
+    height: 100%;
+}
+
+.contr:hover {
+    border: 3px solid #9acd3273;
+}
+
+footer {
+    background-color: #3d3e40;
+    color: white;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.cont {
+    padding: 15px;
+}
+
+.cont .co {
+    width: 23%;
+    float: left;
+    margin-left: 20px;
+}
+
+.cont .co span {
+    color: green;
+    font-weight: bold;
+}
+
+.per {
+    margin-bottom: 0;
+    color: #d1d1d1;
+}
+
+.bu {
+    background-color: transparent;
+    color: green;
+    border: none;
+    margin-left: 100px;
+}
+
+.lin {
+    text-decoration: none;
+    color: green;
+}
+
+.co p {
+    color: #d1d1d1;
+}
+
+.fo .ll,
+textarea {
+    color: white;
+    background-color: black;
+    border: black 1px solid;
+    border-radius: 5px;
+    margin: 5px;
+    width: 100%;
+    padding: 7px;
+}
+
+.sub {
+    background-color: green;
+    border: transparent 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    color: #d1d1d1;
+}
+
+.copyright {
+    color: #d1d1d1;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #292b2e;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
