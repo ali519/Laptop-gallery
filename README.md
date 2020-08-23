@@ -1,2 +1,2 @@
 # Laptop-gallery
-it's laptop gallery
+first desgin not responsive
